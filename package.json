@@ -1,22 +1,23 @@
 {
-  "name": "emotion_analytcs_backend",
+  "name": "expresstest",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node src/app.ts",
-    "start": "ts-node dist/app.js",
-    "build": "tsc -p .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node src/server.ts",
+    "start": "ts-node dist/server.js",
+    "build": "tsc -p ."
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@types/express": "^4.17.2",
-    "@types/node": "^13.5.0",
     "express": "^4.17.1",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
+    "pug": "^2.0.4",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/node": "^12.7.8"
   }
 }
