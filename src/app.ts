@@ -1,8 +1,14 @@
-import * as express from 'express'
+import * as express from 'express';
+import controllers from './controllers';
+
 var app = express();
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
+controllers.map((API) => {
+  API.endPoints.map((EndPoint) => {
+    const endPoint = new EndPoint();
+    //@ts-ignore
+    app[endPoint.method](`/${API.path}/${endPoint.path}`, (request, response) => endPoint.run(request, response));
+  });
 });
 
 app.listen(3000, function () {
