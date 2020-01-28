@@ -1,18 +1,18 @@
 import * as express from 'express';
 
-type method = 'get' | 'post' | 'put' | 'delete';
+/* Interfaces */
+import {
+    Controller,
+    IController
+} from '../../../interfaces';
 
-export default class {
-
-    public method: method;
-    public path: string;
+export default class Get extends Controller implements IController {
 
     constructor() {
-        this.method = 'get';
-        this.path = 'uhuul';
+        super('get', 'uhuul');
     }
 
-    public async run(request:express.Request, response:express.Response) {
-        response.send('Hello World!');
+    async run(request: express.Request, response: express.Response) {
+        return ('Hello World');
     }
 }

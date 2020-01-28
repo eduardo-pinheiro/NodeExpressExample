@@ -6,8 +6,10 @@ var app = express();
 controllers.map((API) => {
   API.endPoints.map((EndPoint) => {
     const endPoint = new EndPoint();
-    //@ts-ignore
-    app[endPoint.method](`/${API.path}/${endPoint.path}`, (request, response) => endPoint.run(request, response));
+    app[endPoint.method](`/${API.path}/${endPoint.path}`, async (request, response) => {
+      const send = await endPoint.run(request, response);
+      if (send !== undefined) response.send(JSON.stringify(send));
+    });
   });
 });
 
