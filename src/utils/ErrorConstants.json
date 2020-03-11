@@ -1,0 +1,7 @@
+{
+    "INVALID_ID": "ID inválido",
+    "INVALID_BODY": "Body inválido",
+    "UNAVAILABLE": "Serviço indisponível",
+    "NOT_FOUND": "Nada foi encontrado",
+    "NOT_ALLOWED": "Método não pode ser usado"
+}

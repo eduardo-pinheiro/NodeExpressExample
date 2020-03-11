@@ -1,0 +1,5 @@
+{
+    "OK": "Requisição bem sucedida",
+    "CREATED": "Novo objeto foi criado",
+    "NO_CONTENT": "Requisição recebida, porém nenhuma ação foi tomada"
+}

@@ -1,22 +1,24 @@
 {
-  "name": "emotion_analytcs_backend",
+  "name": "node_architecture_example",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "exemplo de MVC pra nodeJS",
+  "main": "src/app.js",
   "scripts": {
-    "dev": "ts-node src/app.ts",
-    "start": "ts-node dist/app.js",
-    "build": "tsc -p .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiliamks/node_architecture_example.git"
+  },
+  "author": "wiliamks",
   "license": "ISC",
-  "description": "",
+  "bugs": {
+    "url": "https://github.com/wiliamks/node_architecture_example/issues"
+  },
+  "homepage": "https://github.com/wiliamks/node_architecture_example#readme",
   "dependencies": {
-    "@types/express": "^4.17.2",
-    "@types/node": "^13.5.0",
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
+    "mongodb": "^3.5.4"
   }
 }

@@ -1,0 +1,6 @@
+[
+    {
+        "endpoint": "/feature1",
+        "file": "./features/feature1/Router/Feature1Router.js"
+    }
+]

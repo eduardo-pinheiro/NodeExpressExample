@@ -1,0 +1,7 @@
+{
+    "PORT": 5000,
+    "DB_URL": "mongodb://localhost:27017",
+    "DB_NAME": "node_architecture_examplel",
+    "DB_FEATURE1_COLLECTION": "feature1",
+    "DB_FEATURE2_COLLECTION": "feature2"
+}
